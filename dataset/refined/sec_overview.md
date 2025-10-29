@@ -1,25 +1,146 @@
-The Saudi Electricity Company (SEC) is the entity responsible for utility management and service provision within this context.
+# Saudi Electricity Company (SEC) — Role in EJAR Integration
 
-Role as Service Provider: Within the EJAR system, SEC functions as the Service Provider. This means SEC provides and maintains the underlying integration service that connects utility liability to the rental contracts managed by EJAR.
+## Overview
 
-Core Function (Utility Management): SEC manages utility services and information using SAP IS-U (SAP’s Industry-Specific Solution for the Utilities Industry). This system supports all critical business functions related to electricity delivery, including meter reading, billing, invoicing, accounting, and customer service.
+The **Saudi Electricity Company (SEC)** is the primary entity responsible for **utility management** and **electricity service provision** within the EJAR ecosystem.
 
-Customer Definition: A Customer in SEC is defined as the beneficiary who receives SEC services through an electricity meter.
+SEC provides the **technical infrastructure**, **billing systems**, and **data services** that connect electricity usage with tenancy contracts managed through the EJAR platform.
 
-The EJAR platform (a comprehensive and integrated system run by the Ministry of Housing—MOH) regulates tenancy. It is linked to SEC to regulate and control the tenancy and leasing in the real-estate market.
+---
 
-The primary mechanism for this link is the Integration Service, which acts as a middle-ware layer serving back-end integration between the two platforms.
+# Role of SEC in the EJAR System
 
-EJAR's Role: EJAR acts as the Service Requester that consumes the functions (operations) provided by SEC.
+## Service Provider Role
 
-Integration Goal: The objective is to manage the transferring of electricity service liability between the owner/lessor and the tenant during the contract duration. This also ensures that there are no outstanding account receivables or outstanding items associated with the SEC customer involved in the active rental relation within EJAR.
+- Within the EJAR ecosystem, **SEC acts as the Service Provider**.
+- SEC provides and maintains the **Integration Service**, which links **utility liability** to **rental contracts**.
+- The integration ensures that electricity services are properly assigned between **lessors** and **tenants** based on the contract lifecycle.
 
-Key Operations for Electricity Liability Transfer:
+---
 
-SEC provides the two main operations through which liability for electricity services is transferred:
+# Core Function — Utility Management
 
-Tenant Move-In (MI): This operation transfers the electricity service liability in SEC’s SAP IS-U system from the owner/lessor to the tenant based on a valid rental contract. When successful, SEC issues the new bills under the tenant’s name. The tenant is then considered the actual beneficiary liable for consumption charges and related invoices during the contract period.
+## System Used
 
-Tenant Move-Out (MO): This operation transfers electricity service liability back from the tenant to the owner/lessor when a contract is expired or terminated. SEC issues a final electricity invoice to the tenant and then transfers the liability back to the owner/lessor.
+SEC manages all utility operations using **SAP IS-U** (SAP’s Industry-Specific Solution for the Utilities Industry).
 
-In short, SEC provides the actual electricity service and the technical infrastructure (SAP IS-U) to manage billing and meters, while EJAR initiates the legal and procedural requests (Move-In/Move-Out) that dictate who is liable for that service.
+## Supported Business Functions
+
+The SAP IS-U system enables SEC to:
+
+- Record and manage **meter readings**.
+- Generate and issue **electricity bills and invoices**.
+- Handle **payment processing** and **accounting records**.
+- Manage **customer service requests** and **disconnection/reconnection workflows**.
+
+## Objective
+
+To ensure **accurate, traceable, and timely utility billing** that reflects the active tenancy status within EJAR.
+
+---
+
+# Customer Definition in SEC
+
+## Who is a Customer?
+
+A **Customer** in SEC is defined as the **beneficiary receiving electricity services through an active electricity meter**.
+
+## Relation to EJAR
+
+- Every EJAR contract involves at least one active **SEC Customer Account** if that contract has electricity unit service enabled.
+- This account determines **who is financially liable** for electricity consumption during the contract period.
+
+---
+
+# EJAR–SEC Integration Overview
+
+## EJAR’s Role
+
+- The **EJAR Platform** (operated by the **Ministry of Housing — MOH**) regulates and manages **tenancy and leasing** activities in the Saudi real estate market.
+- EJAR functions as the **Service Requester**.
+- It consumes and triggers **SEC’s integration APIs** through the **Integration Service** layer.
+
+## Integration Service Function
+
+- Acts as a **middleware layer** that connects EJAR and SEC systems.
+- Handles all **back-end API communication** related to:
+  - Premise and meter validation.
+  - Tenant eligibility checks.
+  - Electricity liability transfers.
+
+## Integration Goal
+
+- To manage the **transfer of electricity service liability** between **lessor** and **tenant**.
+- To ensure there are **no outstanding receivables or unpaid balances** linked to any contract account during an active tenancy.
+
+---
+
+# Key Operations for Electricity Liability Transfer
+
+SEC provides two **core API operations** that enable the transfer of liability between the **owner/lessor** and the **tenant**:
+
+---
+
+## Tenant Move-In (MI)
+
+### Purpose
+
+Transfers electricity service liability **from the owner/lessor to the tenant** at the start of a valid rental contract.
+
+### System Function
+
+- Executed through **SEC’s SAP IS-U** system.
+- When processed successfully:
+  - **New bills** are issued under the **tenant’s name**.
+  - The tenant becomes the **liable consumer** for all electricity usage and charges.
+
+### Trigger
+
+- Initiated by EJAR when:
+  - A new **rental contract is issued or reissued**.
+  - An existing contract undergoes a **Move-In update** due to change in tenancy.
+
+---
+
+## Tenant Move-Out (MO)
+
+### Purpose
+
+Transfers electricity service liability **back to the owner/lessor** when a tenancy ends.
+
+### Function
+
+- Triggered by EJAR when:
+  - The contract is **expired**, **terminated**, **revoked**, **archived**, or a **Move-Out request** is manually initiated.
+
+### System Behavior
+
+- SEC’s system issues a **final electricity bill** to the outgoing tenant.
+- After payment, financial liability is reassigned to the **owner/lessor**.
+
+### Constraint
+
+- The Move-Out process can only be executed if the **corresponding Move-In** was originally initiated by EJAR.
+
+---
+
+# Summary: Roles and Integration Logic
+
+| Aspect | Description |
+|--------|--------------|
+| **System Provider** | Saudi Electricity Company (SEC) |
+| **System Requester** | EJAR Platform (Ministry of Housing) |
+| **Middleware** | Integration Service (EJAR ↔ SEC connector) |
+| **Primary Objective** | Manage electricity liability transfer between lessor and tenant |
+| **System Backbone** | SAP IS-U — manages meters, billing, invoicing, and customers |
+| **Core Operations** | Tenant Move-In (MI), Tenant Move-Out (MO) |
+| **Customer Definition** | Beneficiary who receives SEC services through an electricity meter |
+
+---
+
+# Key Insights
+
+- **SEC = Utility Management & Billing System.**
+- **EJAR = Tenancy Regulation & Contract Management.**
+- Integration ensures that **electricity liability** mirrors **contractual responsibility** in real time.
+- The **Move-In / Move-Out operations** are the foundation of this liability management process.

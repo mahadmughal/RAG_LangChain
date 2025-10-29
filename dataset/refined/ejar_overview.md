@@ -1,32 +1,114 @@
-EJAR Platform:
-The EJAR Platform is described as a comprehensive and integrated system run by the Saudi government (or the Ministry of Housing - MOH) that functions to regulate and control the tenancy and leasing in the real-estate market within the kingdom.
+# EJAR Platform Overview
 
-Contracts:
-In the EJAR context, contracts define the legal terms, conditions, and financial information related to leasing. The sources define several specific types:
+## Description
 
-Rental Contract: This represents the contract established between two parties (the lessor and the tenant) within EJAR concerning the leasing of certain units(s).
+The **EJAR Platform** is a comprehensive, government-run system under the **Ministry of Housing (MOH)** in Saudi Arabia.  
+It regulates and controls **tenancy and leasing activities** in the real-estate market across the Kingdom.
 
-Residential Contracts: This specific type of contract is for housing units, involving families or individuals, established between the lessor and tenant regarding leasing a single property or certain units.
+## Core Purpose
 
-Commercial Contract: This type of contract is concerned with leasing units, shops, and malls. The parties involved may be bodies or companies engaged in commercial work.
+- To standardize tenancy contracts and relationships.
+- To ensure transparency between lessors, tenants, and brokerage offices.
+- To maintain official records of leasing operations.
 
-Sublease Contract: This contract allows a tenant who is part of the main contract to lease out units to another tenant or tenants.
+---
 
-Brokerage Agreement / Brokerage Contract: This agreement is established between a brokerage office (BO) and the lessor or their representative within the EJAR platform. This agreement authorizes the BO to act as an intermediary between the lessor and the tenant for rental contracts.
+# Contract Types in EJAR
 
-BO (Brokerage Office)
+## Rental Contract
 
-The BO stands for Brokerage Office
+- A legally binding agreement between the **lessor** and the **tenant**.
+- Defines terms, conditions, and financial information for leasing one or more property units.
 
-It is defined as the intermediate party between the lessor and the tenant. Its primary function is to facilitate the leasing process based on the brokerage agreement. The Brokerage Agreement enables the BO to perform various activities, including unit leasing, rent collection, and unit marketing.
+## Residential Contract
 
-Key Parties:
-To fully understand the contract mechanisms, it is helpful to know the main parties involved:
+- Applies to **housing units** involving individuals or families.
+- Establishes terms between the lessor and tenant for residential properties.
 
-Lessor: An individual, organization, or a combination of them, who is involved in a rental contract based on the gained benefits of leasing one or more of his properties’ units. The lessor is an individual or organization that has the right to gain the benefits of leasing the property, and in some cases, the lessor is the owner himself
+## Commercial Contract
 
-Tenant: An individual or organization that rents a property unit(s)
+- Used for leasing **commercial units, shops, or malls**.
+- Typically involves organizations or companies engaged in commercial work.
 
-Parties: This term refers generally to the lessor and tenant, whether they are individuals or organizations
+## Sublease Contract
 
-Power of Attorney (POA): This refers to a document that is registered electronically in the Ministry of Justice (MOJ) with a number and date
+- Allows a **tenant** under a main contract to lease the unit(s) to another tenant.
+- The original tenant becomes the **sub-lessor** in this arrangement.
+
+## Brokerage Agreement / Brokerage Contract
+
+- An agreement between a **Brokerage Office (BO)** and a **lessor or representative**.
+- Authorizes the BO to act as an intermediary for creating or managing rental contracts.
+- Common functions:
+  - Facilitating property leasing.
+  - Managing rent collection.
+  - Marketing rental units.
+
+---
+
+# Brokerage Office (BO)
+
+## Definition
+
+The **Brokerage Office (BO)** is the **intermediate party** between the lessor and the tenant.
+
+## Core Functions
+
+- Acts as an intermediary through a valid **Brokerage Agreement**.
+- Performs actions such as:
+  - Advertising and marketing property units.
+  - Managing and collecting rental payments.
+  - Handling tenancy documentation.
+
+---
+
+# Key Contract Parties
+
+## Lessor
+
+- An **individual or organization** who owns or benefits from leased property units.
+- Has legal rights to lease out property and receive rental benefits.
+- In many cases, the **lessor is also the property owner**.
+
+## Tenant
+
+- An **individual or organization** renting a property unit or multiple units.
+- Responsible for fulfilling lease obligations and payments as defined in the contract.
+
+## Parties (General Term)
+
+- Refers collectively to the **lessor and tenant**, regardless of whether they are individuals or organizations.
+
+---
+
+# Power of Attorney (POA)
+
+## Definition
+
+The **Power of Attorney (POA)** is a **legally registered electronic document** under the **Ministry of Justice (MOJ)**.
+
+## Purpose
+
+- Confirms that a representative or agent is legally authorized to act on behalf of another individual or organization.
+- Contains an official **registration number** and **issuance date** for traceability.
+
+---
+
+# Summary: Contract Ecosystem in EJAR
+
+| Entity | Role | Description |
+|--------|------|-------------|
+| **EJAR Platform** | System | Regulates tenancy and manages contracts |
+| **Lessor** | Party | Property owner or entity leasing out the unit(s) |
+| **Tenant** | Party | Individual or organization renting a unit |
+| **BO (Brokerage Office)** | Intermediary | Facilitates leasing via brokerage agreement |
+| **POA (Power of Attorney)** | Legal Document | Authorizes representation and management |
+
+---
+
+# Key Takeaways
+
+- EJAR unifies the **legal, procedural, and financial** aspects of tenancy.
+- Contracts define the scope, type, and conditions of leasing.
+- Brokerage Offices play a **regulated intermediary role**.
+- Power of Attorney documents ensure **legal delegation and compliance**.
